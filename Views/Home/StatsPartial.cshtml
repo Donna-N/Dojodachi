@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="instructions">
+    <p class = "fs-2 lh-base">Instructions:</p>
+    <p class ="fs-3 lh-sm">Don't let your Dojodachi's happiness or fullness ever reach 0 or it will die.</p>
+    <p class = "fs-3 lh-sm">Raise its energy, fullness, and happiness to over 100 to win!</p>
+</div>
+<hr>
+
+<div class="row justify-content-around">
+    <p class= "col">Happiness: @ViewBag.Happiness</p>
+    <p class= "col">Fullness: @ViewBag.Fullness</p>
+    <p class= "col">Energy: @ViewBag.Energy</p>
+    <p class= "col">Meals: @ViewBag.Meals</p>
+</div>
+<div class="row justify-content-center">
+    <div class = "ImageContainer">
+        <img src="@ViewBag.Image" alt="">
+        <p>@ViewBag.Response</p>
+    </div>
+</div>
